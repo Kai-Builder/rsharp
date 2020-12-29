@@ -1,0 +1,34 @@
+{
+  "x": {
+    "bin": [
+      "keepfiles",
+      ".rcache",
+      ".keep",
+      ".RSTASH"
+    ],
+    "def": [
+      ".reevedefs",
+      ".rdef"
+    ],
+    "mains": [
+      ".r#",
+      ".rsharp",
+      ".resharp",
+      ".reeve"
+    ],
+    "definitions": {
+      ".r#": [
+        "Reeve Sharp Source File."
+      ],
+      ".rsharp": [
+        "Reeve Definitions File."
+      ],
+      ".resharp": [
+          "R# Source File"
+      ],
+      ".reeve": [
+        "Reeve Language Source"
+      ]
+    }
+  }
+}

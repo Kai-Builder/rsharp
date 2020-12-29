@@ -1,0 +1,7 @@
+{
+  "name": "rsharpprojectmanager",
+  "version": "1.0.0",
+  "scripts": {
+    "rsh.CloneDependencies": "git clone https://github.com/Kai-Builder/reeveforvs.git"
+  }
+}
