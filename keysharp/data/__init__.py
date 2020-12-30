@@ -1,13 +1,15 @@
 import json
 import os
 
-class ReSharp():  # R# Class
+
+class ReSharp:  # R# Class
     ##
     #
     #
     #
     #
-    def Compile(self, filename):
+    @staticmethod
+    def Compile(filename):
         if filename.endswith(".rsharp"):
             o = open(filename, "r")
             a = o.readlines()
@@ -22,11 +24,16 @@ class ReSharp():  # R# Class
                 reevelibin = False
                 base = False
                 mlang = False
+                alk = False
                 for line in f:
                     compileline = line[:-1]
                     if compileline == "keep main":
                         print("Found Keep Main.")
                         a.write("\ndef main()")
+                    elif compileline == "include module alkaline":
+                        print("Gathering Alkaline..")
+                        print("Found Alkaline!")
+                        alk = True
                     elif compileline == "modules = package('reeve.rsharp')":
                         reevelibin = True
                         a.write("import reeveforvs.api.PyReeve")
@@ -47,13 +54,15 @@ class ReSharp():  # R# Class
                         else:
                             print("Writeln Has Been Called!")
                     elif compileline == "ip":
-                        if reevelibin:
+                        if ioen:
                             i = input(">>>")
                         else:
                             print("UNDEFINED FUNCTION 'IP' MISSING FROM REEVE.RSHARP\n\nLNK:938\nIP Is from "
                                   "reeve.rsharp. Try Saying modules = package('io.rsharp') next time")
                     elif compileline == "snippet.Collect { ext.learn.read }":
                         print("Collected Snippet EXT.LEARN.READ + IO WRITE.")
+                    elif compileline == "after:":
+                        print("Be;")
                     elif compileline == "snippet.Collect { def.main as keep main }":
                         print("Def Main As KEEPMAIN (fine)")
                     elif compileline == "join mlang to __CURRENT__ as Rsh":
@@ -72,7 +81,7 @@ class ReSharp():  # R# Class
                         print("USING NPP")
                     elif compileline == "powerline -o mp":
                         print("True")
-                    elif compileline == "BoolAlpha(io.power.__curr__(statement**), with args * delta)":
+                    elif compileline == "alkaline.BoolAlpha(io.power.__curr__(statement**), with args * delta)":
                         print("False")
                     elif compileline == "DB.Current({[alphaline**, string& lineof * new] ++inst}) diagram(print " \
                                         "inst**)} new":
@@ -95,28 +104,39 @@ class ReSharp():  # R# Class
                     elif compileline == "//":
                         print("00")
                     elif compileline == "gg.alkaline--newdef (**) x * statements++ arg**&&getvals** {[(90, var ** x)]}":
-                        print("New Table Created.")
+                        if alk == True:
+                            print("New Table Created.")
+                        else:
+                            print("Error, Library: 'gg' Not Detected.")
+                    elif compileline == "gg.alkaline--uproc++ str** string& {{Operator**}} Get& Values[2]":
+                        if alk:
+                            print("Alkaline Values two")
+                        else:
+                            print("Error, Library: 'gg' Not Detected.")
+                    elif compileline == "install {LIB.RSH.ALL}":
+                        print("Installing All Base Modules...")
+                    elif compileline == "stretch main[argv**, new++]":
+                        print("Stretched Main With ARGV, And NEW++")
+                    elif compileline == "<diff>":
+                        print("1010192010")
+                    elif compileline == "<undiff>":
+                        print("9001080299")
+                    elif compileline == "<udif lang=='rsharp'>":
+                        print("RSHARP LANGUAGE")
                     elif compileline is None:
                         print("ERROR 9\n\nCOMP:176\nError while Parsing, 'newline'.")
         else:
             print(
                 f"File Either Does not end With .rsharp Or Has Nothing Inside.\n\nCompiler Error: File, {filename} "
                 f"Does not end with .rsharp")
+
     def Install(self, handlerfile):
         if handlerfile.endswith(".rins"):
             print(f"Installing {handlerfile}...")
             a = open("a.py", "a")
             with open(handlerfile, 'r') as f:
-                # Insert Standard Booleans
-                var = list()
-                # Insert Default Settings
-                ioen = False
-                reevelibin = False
-                base = False
-                mlang = False
                 for line in f:
                     compileline = line[:-1]
                     o = open(compileline, 'w')
                     o.write('# MODULE! DO NOT WRITE TO.')
                     o.close()
-

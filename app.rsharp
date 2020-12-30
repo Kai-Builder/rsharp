@@ -1,8 +1,8 @@
-keep main
+<diff>
+// This is written in C++ LOL
 
-BoolAlpha(io.power.__curr__(statement**), with args * delta)
-global
-{
-DB.Current({[alphaline**, string& lineof * new] ++inst}) diagram(print inst**)} new
-pv * args w.new(**) while get** --+instance (wtrue * (instance)* ^^new Table, Meta (String& String True)) with fry as package('fry') build test.dat arr[random.maxint(arr))]
+int main() {
+    std::cout << "I'm Writing this in RSharp. LOL!";
 }
+
+<undiff>

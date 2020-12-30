@@ -65,7 +65,7 @@ BoolAlpha(io.power.__curr__(statement**), with args * delta) // Returns TRUE sin
 */
 
 ////// BOXER DEFINITION \\\\\\\\
-{ // Beginning Line (beginline)
+{ // Beginning Line (beginline)````
 DB.Current({[alphaline**, string& lineof * new] ++inst}) diagram(print inst**)} new
 } // End Line (endline)
 ```
@@ -152,5 +152,85 @@ gg.alkaline--newdef (**) x * statements++ arg**&&getvals** {[(90, var ** x)]}
 ```
 It is Used In Comparison with BOXERS For Easy manip.
 
-# End 1
-Thank you for trying R#.
+# The stretch Statement
+The Stretch Statement Allows The **MAIN** To be Stretched Until NULL.
+```
+stretch main[argv**, new++]
+```
+Scripts Like the one shown below give a good example on how the compiler handles the Scripts.
+```cpp
+keep main
+stretch main[argv**, new++]
+include module alkaline
+use reeve
+
+modules = package('io.rsharp')
+{
+ip
+// IP Is a Function Which allows User input.
+!define
+!define
+index(/basic)
+gg.alkaline--uproc++ str** string& {{Operator**}} Get& Values[2]
+// Module Alkaline
+}
+// Closed Line
+// BEFORE: Allows functions inside to be passed anywhere!
+before:
+join mlang to __CURRENT__ as Rsh
+using npplintv0.9
+
+after:
+powerline -o mp
+```
+
+# Before: And After: Statements
+The Before and after statements allow code under them to be executed first or last dependent on where your code is.
+
+As you could see, The Before Function Joins MLANG To The Current Script.
+```buildoutcfg
+before:
+join mlang to __CURRENT__ as Rsh
+using npplintv0.9
+```
+The AFTER Statement takes effect After and is always put at the END.
+
+# Editor Config
+The In-Script Compiler Allows you to customize your Install Builds for your dependencies.
+
+Every Install List Is Opened Like so.
+```
+
+compiler.ReSharp.Install(0, 'lists.rins')
+
+```
+This Function will Install the .rins List which stands for Reeve Installer File.
+
+# Why Python And Not C++?
+I've Made a couple of Binary Releases For C++, I Felt python would be easier for others than C++ Would Since Python is a Pre-Compiled Language. Makes Sense?
+
+# MLANG
+MLANG is a multilanguage switcher Lib Which works With HTML-Type Tags.
+EXAMPLE!
+```cpp
+before:
+{
+<diff>
+// This is written in C++ LOL
+
+int main() {
+    std::cout << "I'm Writing this in RSharp. LOL!";
+}
+
+<undiff>
+}
+```
+MLANG is simple and very powerful if used correctly.
+
+# CHANGELOG
+RSharp 1.2 Adds Loads new Features.
+
+The Features have already been Documented As shown above.
+
+# End
+Thank you for using my Language!
