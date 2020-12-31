@@ -123,8 +123,26 @@ class ReSharp:  # R# Class
                         print("9001080299")
                     elif compileline == "<udif lang=='rsharp'>":
                         print("RSHARP LANGUAGE")
-                    elif compileline is None:
+                    elif compileline == "\n":
                         print("ERROR 9\n\nCOMP:176\nError while Parsing, 'newline'.")
+                    elif compileline == "callback(malloc)":
+                        print("Error. Cannot Concatenate System Variable, 'malloc'")
+                    elif compileline == "index(/basic/standard/functions_base)":
+                        print("INDEXED basic/standard/functions_base, Got 93087 Results.")
+                    elif compileline == "print('indexp_(getcr**, functions)'":
+                        print("Table Of functions_base")
+                        print("SystemFunction 187KB")
+                        print("DataTable 19MB")
+                        print("meta Tables 19281783276KB")
+                    elif compileline == "require module r_dynamics":
+                        print("Required R DYNAMICS")
+                        p = open("Hl.rnamic", "w")
+                        p.close()
+                    elif compileline == "R DYNAMIC INIT":
+                        print("On Line __line__, initialized R Dynamics")
+                    elif compileline == "dynamics++ [[--++namics]] properties{DYNAIMCS.NAME = newdynamic, " \
+                                        "DYNAMICS.WRITE = newdynamic}":
+                        print("GGNAMICS")
         else:
             print(
                 f"File Either Does not end With .rsharp Or Has Nothing Inside.\n\nCompiler Error: File, {filename} "

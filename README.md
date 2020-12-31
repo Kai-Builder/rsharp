@@ -227,10 +227,97 @@ int main() {
 ```
 MLANG is simple and very powerful if used correctly.
 
+# The Index() Feature.
+`Index({library})` Is a Targeted Function Which allows Users to Index Certain Library Functions Throughout the R# SESSION LIBRARY HOLDER, Or, The Cloud.
+
+1.3 At minimum Features new ways to index the Libraries.
+Here's Some Examples!
+
+```
+keep main
+print('indexp_(getcr**, functions)
+snippet.Collect { def.main as keep main }
+dynamics++ [[--++namics]] properties{DYNAIMCS.NAME = newdynamic, DYNAMICS.WRITE = newdynamic}
+{
+index(/basic/standard/functions_base)
+// Indexes basic/std/functions_base Library
+}
+// Index Function-Base
+```
+The Index Function Will Index Functions and Look for All.
+
+# Print VS writeln
+Print is a formatted Edit of writeln with Text Decoration As Shown Below.
+
+```
+print('indexp_(getcr**, functions')
+```
+PRINT Must have a Variable inside. if not, It will arise a PrintError.
+Use writeln For Basic IO Format.
+
+# snippet.Collect { abc }
+Snippet.Collect is a Flavorful Function Made to ease Development by inserting pre-defined snippets, with no extra install needed.
+
+Go to the Snippet System Category To Learn how they work
 # CHANGELOG
-RSharp 1.2 Adds Loads new Features.
+RSharp 1.3 Adds Loads new Features.
 
-The Features have already been Documented As shown above.
+The Features have already been Documented As shown above. (and BELOW)
 
-# End
-Thank you for using my Language!
+# The Snippet System
+
+Snippet Collector Collects Code Snippets and Binary Formats.
+
+The Kword, `snippet.Collect { def.main as keep main }`, Collects Many Different Edits Of keep main, That's how you enable the STRETCH keyword for main.
+
+EXAMPLE VV
+
+```
+keep main // << CANCELLATION OPERATOR, IT FINDS KEEP MAIN BUT CANCELS IT OUT
+snippet.Collect { def.main as keep main }
+stretch main[argv**, new++]
+```
+
+The Snippets are Temporary and can be used anywhere.
+
+# CallBack 
+
+The Callback Function Concatenates 3 Things.
+
+- Type
+
+- Data
+
+- Value
+ 
+The Callback Function Prints Out Certain Vars, And Like other functions, this one is Targeted Meaning it can only be read from the compiler by the RULEBOOK, or [This](keysharp/data/__init__.py).
+
+# Targeted VS Static VS Dynamic Functionality
+The Targeted Functions Are In the scope of the __init__.py Document and Can only be changed with the compiler. These are the Basic Functions that are written to a File Called a.py. 
+Targeted Functions Use the init python File For Functionality and are written and read by the cp.
+
+Statics Are KWORDS ONLY.
+Kword Stands for Keyword and Are only available in the **SourceForge Binary C Release.**
+The Statics Are Just Keywords With their own defs.
+
+Dynamic Functionality Is Also ONLY available in the SourceForge Binary C Release. These are the `Array` Types, `strings`, `literals`, `classes`, And More.
+# Linkers
+The Linker, Or (LNK) As Mentioned in the Compiler's script, Links The Compiler And File together, it opens it, Reads, And Makes a new file which then translates R# To .PY
+The Linker Is a Simple tool and it comes out-of-the-box with The R# Compiler.
+
+The LNK Uses Python To Open .rsharp Files and read them.
+# Abbreviations
+### LNK
+LNK Stands for the Standard Linker used to compile .rsharp Files.
+### IMP
+The IMP Stands for Import, This abbreviation would show if you imported a Package which wasn't signed. (UPDATED IN 1.3)
+### DB or STD
+- DB
+  - The DB is a Library made for Functions that ease the Production of functions like Delta.
+- STD
+  - We all know this one, STD, STANDARD LIBRARY. This Class Contains Functions which can be used for R#. Comes with reeve.rsharp.
+  
+
+# Developer Sheet
+If you'd Like to try the Dev Sheet to become an active worker On R#, Or you have something I Don't/Can't Do, DM Me on Discord, Or Submit a Form As a Issue.
+
